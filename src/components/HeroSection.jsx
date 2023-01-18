@@ -5,21 +5,27 @@ import { ReactComponent as TwitterIcon } from "../assets/icons/twitter.svg";
 import { ReactComponent as YouTubeIcon } from "../assets/icons/youtube.svg";
 import { ReactComponent as DiscordIcon } from "../assets/icons/discord.svg";
 import hero from "../assets/hero.png";
+import africa from "../assets/africa.mp4";
 
 const HeroSection = () => {
   return (
     <div className="hero-section-container">
+   {/* <video className="hero-video" autoPlay loop>
+    <source src={africa} type="video/mp4" />
+    Your browser does not support the video tag.
+</video> */}
       <div className="hero-info-wrapper">
         <div className="hero-info-text">
           <h1>
-           <span className="highlighted">We are building a new clearing infrastructure</span><h4>For firms wishing to leverage Distributed Ledger Technology (DLT), become payment institutions, or become electronic money institutions.</h4>
+            Building a fairer and more connected financial world
           </h1>
-          <p className="hero-info-description">
-           
-          </p>
+          <h4>
+            Empowering SMEs and revolutionizing cross-border payments through innovative technology solutions
+          </h4>
           <div className="social-links-container">
             <div className="social-links">
               <a href="/">
+                <TelegramIcon />
               </a>
               <a href="/">
                 <TwitterIcon />
@@ -27,17 +33,14 @@ const HeroSection = () => {
               <a href="/">
                 <YouTubeIcon />
               </a>
-              <a href="/">
-              </a>
+      
             </div>
           </div>
         </div>
       </div>
-      <div className="hero-image-container">
-        <img className="hero" src={hero} alt="blockchain" />
-      </div>
     </div>
   );
 };
+
 
 export default HeroSection;

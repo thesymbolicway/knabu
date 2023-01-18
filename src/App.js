@@ -16,7 +16,7 @@ import SocialMediaPromotion from './components/SocialMediaPromotion';
 import DevSection from './components/DevSection';
 import Footer from './components/Footer';
 import PDF from './components/PDF';
-
+import video from './assets/africa.mp4';
 
 function App() {
   const features = [
@@ -55,9 +55,12 @@ function App() {
   ];
   return (
     <div className="home">
+       <video className="hero-video" autoPlay loop muted>
+    <source src={video} type="video/mp4" />
+  </video>
       <Header />
       <HeroSection />
-      <DailyStats />
+      {/* <DailyStats /> */}
       <FeatureOne />
       <div className='features-list-container'>
         {

@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 import { ReactComponent as MenuIcon } from "../assets/icons/menu.svg";
+import hero from "../assets/hero.png";
+
+
 
 const Header = () => {
   const [isExpanded, setIsExpanded] = useState(false);
@@ -10,7 +13,10 @@ const Header = () => {
   return (
     <>
       <div className="header-container">
-        <div className="logo">KNABU</div>
+      <div className="logo">
+  <img src={hero} alt="Knabu logo" />
+  KNABU
+</div>
         <div className="menu">
           <div className="menu-links">
             <a href="/">Vision</a>
