@@ -60,7 +60,6 @@ function App() {
   </video>
       <Header />
       <HeroSection />
-      {/* <DailyStats /> */}
       <FeatureOne />
       <div className='features-list-container'>
         {
